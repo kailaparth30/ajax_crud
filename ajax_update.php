@@ -84,7 +84,6 @@ $phone_number = $row['phone_number'];
             event.preventDefault();
             var from = new FormData(this);
             from.append("id", "<?php echo $id; ?>");
-            console.log(from);
             $.ajax({
                 type: "POST",
                 url: "http://localhost:81/ajaxcrud/ajax_updated.php",
